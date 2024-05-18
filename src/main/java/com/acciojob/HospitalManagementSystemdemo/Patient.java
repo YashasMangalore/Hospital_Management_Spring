@@ -8,6 +8,14 @@ public class Patient
     private String PatientDisease;
     private String mobNo;
 
+    public Patient(int patientID, String patientName, int patientAge, String patientDisease, String mobNo) {
+        this.patientID = patientID;
+        PatientName = patientName;
+        this.patientAge = patientAge;
+        PatientDisease = patientDisease;
+        this.mobNo = mobNo;
+    }
+
     public int getPatientID() {
         return patientID;
     }

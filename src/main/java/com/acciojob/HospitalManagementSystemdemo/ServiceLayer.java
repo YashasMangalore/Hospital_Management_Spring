@@ -44,4 +44,19 @@ public class ServiceLayer {
         }
         return name;
     }
+
+    public String getOldestPatientName(List<Patient> patientList)
+    {
+        int maxAge=0;
+        String name="";
+        for(Patient patient:patientList)
+        {
+            if(patient.getPatientAge()>maxAge)
+            {
+                maxAge= patient.getPatientAge();
+                name=patient.getPatientName();
+            }
+        }
+        return name;
+    }
 }
