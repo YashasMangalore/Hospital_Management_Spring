@@ -12,7 +12,7 @@ import java.util.Map;
 @RequestMapping("patient")//prefixes added
 public class APIClass
 {
-    @GetMapping("getWeatherStatus")
+    @GetMapping("getWeatherStatus")//dummy api to test
     public String getWeatherStatus()
     {
         return "The temperature is 32 degree Celsius, mostly sunny and humidity 70% with wind 18km/hr";
